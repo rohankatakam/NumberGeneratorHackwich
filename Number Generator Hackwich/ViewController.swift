@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-    //Outlets
+    //Outlets for ImageView and Header Label
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var headerLabel: UILabel!
     
@@ -21,6 +21,7 @@ class ViewController: UIViewController {
         imageView.userInteractionEnabled = true
         imageView.addGestureRecognizer(tapGestureRecognizer)
     }
+    
     
     //Method called when Tap Gesture on ImageView tapped
     func imageTapped(img: AnyObject){
